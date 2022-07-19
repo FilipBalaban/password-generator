@@ -5,26 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Css styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+        <!-- Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="foreground-circle"></div>
-    
-    <h1>Generate a 
-        <span>
+    <div class="foreground-circle1"></div>
+
+    <h1 class="title">Generate a 
+        <span class="title-text-span">
         <br>random password
         </span>
     </h1>
 
-    <h2>Never use an insecure password again.</h2>
+    <h2 class="subtitle">Never use an insecure password again.</h2>
 
-    <button>Generate passwords</button>
+    <button onclick="generatePasswords()">Generate passwords</button>
 
     <div class="line-div"></div>
 
     <div class="passwords-container">
-        <p id="password1-el">qweqweqwe</p>
-        <p id="password2-el">safsafsasf</p>
+        <p id="password1-el"></p>
+        <p id="password2-el"></p>
     </div>
     
+
+    <div class="foreground-circle2"></div>
 </body>
 </html>
