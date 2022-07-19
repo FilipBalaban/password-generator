@@ -4,13 +4,18 @@ let password1 = ""
 let password2El = document.getElementById("password2-el")
 let password2 = ""
 
+password1El.textContent = password1
+password2El.textContent = password2
+
 // Booleans
 let allCharactersPreference = true
 let noNumbersPreference = false
 let noSpecialPreference = false
 
-password1El.textContent = password1
-password2El.textContent = password2
+// Toggle btns rendering
+let specialChrEl = document.getElementById("special-chr-el")
+let numberEl = document.getElementById("number-el")
+let allChrEL = document.getElementById("all-chr-el")
 
 // All Characters
 const charactersArr = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
@@ -107,16 +112,31 @@ function generateNoNumbers() {
     noNumbersPreference = true
     allCharactersPreference = false
     noSpecialPreference = false
+
+    // Render
+    numberEl.textContent = "No numbers ✔" 
+    specialChrEl.textContent = "No special characters"
+    allChrEL.textContent = "All characters"
 }
 
 function generateNoSpecial() {
     noNumbersPreference = false
     allCharactersPreference = false
     noSpecialPreference = true
+
+    // Render
+    specialChrEl.textContent = "No special characters ✔"
+    numberEl.textContent = "No numbers" 
+    allChrEL.textContent = "All characters"
 }
 
 function generateAllCharacters() {
     noNumbersPreference = false
     allCharactersPreference = true
     noSpecialPreference = false
+
+    // Render
+    allChrEL.textContent = "All characters ✔"
+    numberEl.textContent = "No numbers"
+    specialChrEl.textContent = "No special characters"
 }
