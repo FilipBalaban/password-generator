@@ -65,22 +65,28 @@ button:hover {
     transition: 0.5s;
 }
 
+
 .line-div {
     width: 90%;
-    height: 1px;
+    height: 2.5px;
     background: #E5E7EB;
+    background: #CA2D48;
     margin: 30px 0 60px 0;
 }
 
+.passwords-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 p {
-    display: inline;
-    margin: 0 10px 0 10px;
-    padding: 15px 60px;
+    margin: 10px;
+    padding: 15px 30px;
 
     border-radius: 10px;
 
-    font-size: 25px;
+    font-size: 20px;
     background: #273549;
 
 }
