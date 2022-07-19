@@ -37,9 +37,8 @@ body {
 
 button {
     width: 290px;
-    height: 55px;
-    padding: 10px 15px 25px; 
-    margin: 10px 0 10px -155px;
+    padding: 15px 15px; 
+    margin: 10px 0 10px;
 
     
     border: none;
@@ -53,36 +52,55 @@ button {
     font-weight: 800;
 }
 
-button:hover {
-    width: 310px;
-    height: 60px;
-    padding-top: 12px;
+.main-btn:hover {
+    width: 320px;
+    padding: 20px;
+
     border-radius: 10px;
 
     background: #fd5470;
     font-size: 25px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 1s;
 }
 
+.toggle-btn {
+    width: 255px;
+    margin: 10px 10px 10px;
+
+    font-size: 18px;
+}
+
+.toggle-btn:hover {
+    width: 270px;
+
+    background: #fd5470;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
 
 .line-div {
     width: 90%;
     height: 2.5px;
     background: #E5E7EB;
     background: #CA2D48;
-    margin: 30px 0 60px 0;
+    margin: 30px auto 60px auto;
 }
 
 .passwords-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px -30px 0 0;
 }
 
 p {
-    margin: 10px;
+    text-align: center;
+    margin: 10px 15px;
     padding: 15px 30px;
+    width: 200px;
+    height: 30px;
 
     border-radius: 10px;
 
@@ -94,7 +112,7 @@ p {
 .foreground-circle2 {
     width: 270px;
     height: 270px;
-    margin: 220px -160px -50px auto;
+    margin: 30px -160px 50px auto;
 
     background: #CA2D48;
     border-radius: 50%;

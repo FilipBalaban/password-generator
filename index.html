@@ -27,13 +27,19 @@
 
     <h2 class="subtitle">Never use an insecure password again.</h2>
 
-    <button onclick="generatePasswords()">Generate passwords</button>
+    <button class="main-btn" onclick="generatePasswords()">Generate passwords</button>
 
     <div class="line-div"></div>
 
     <div class="passwords-container">
         <p id="password1-el"></p>
         <p id="password2-el"></p>
+    </div>
+    <h2>Modes:</h2>
+    <div class="toggle-buttons">
+        <button class="toggle-btn" onclick="generateNoSpecial()">No special characters</button>
+        <button class="toggle-btn" onclick="generateAllCharacters()">All characters</button>
+        <button class="toggle-btn" onclick="generateNoNumbers()">No numbers</button>
     </div>
     
 
